@@ -8,6 +8,7 @@ footer {
     .container {
         .content {
             display: flex;
+            height: 500px;
             .bigger-logo {
                 background-image: url("../images/dc-logo-bg.png");
                 background-repeat: no-repeat;
@@ -22,6 +23,7 @@ footer {
     #footer-nav {
         display: flex;
         margin: 40px;
+        position: relative;
         h5 {
             padding: 20px 0;
             font-size: 20px;
@@ -32,6 +34,16 @@ footer {
             li {
                 line-height: 20px;
                 font-size: 14px;
+            }
+        }
+        .rights {
+            width: 600px;
+            font-size: 14px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            a {
+                color: dodgerblue;
             }
         }
     }

@@ -206,6 +206,7 @@ footer {
 }
 footer .container .content {
   display: flex;
+  height: 500px;
 }
 footer .container .content .bigger-logo {
   background-image: url("../images/dc-logo-bg.png");
@@ -219,6 +220,7 @@ footer a {
 footer #footer-nav {
   display: flex;
   margin: 40px;
+  position: relative;
 }
 footer #footer-nav h5 {
   padding: 20px 0;
@@ -231,6 +233,16 @@ footer #footer-nav ul {
 footer #footer-nav ul li {
   line-height: 20px;
   font-size: 14px;
+}
+footer #footer-nav .rights {
+  width: 600px;
+  font-size: 14px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+footer #footer-nav .rights a {
+  color: dodgerblue;
 }
 footer #footer-social {
   background-color: #303030;
