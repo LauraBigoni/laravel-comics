@@ -60,6 +60,9 @@ header .container .logo img {
 header .container .nav-menu {
   display: flex;
 }
+header .container .nav-menu i {
+  cursor: pointer;
+}
 header .container ul {
   display: flex;
   list-style-type: none;
@@ -177,6 +180,9 @@ main #comics ul {
 main #comics ul li {
   margin: 20px 5px;
   width: 200px;
+}
+main #comics ul .cards {
+  cursor: pointer;
 }
 main #comics ul .card {
   width: 200px;

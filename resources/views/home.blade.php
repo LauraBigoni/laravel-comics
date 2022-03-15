@@ -49,10 +49,16 @@
                     <p>CURRENT SERIES</p>
                 </div>
                 <ul>
-                    <li>
-                        <div class="card"><img src="" alt="comic" /></div>
-                        <p class="comic-series">descrizione fumetto</p>
+                    @forelse ($comics as $comic)
+                    <li class="cards">
+                        <div class="card">
+                            <img src="{{ $comic['thumb']}}" alt="{{ $comic['title']}}" />
+                        </div>
+                        <p class="comic-series">{{ $comic['title']}}</p>
                     </li>
+                    @empty
+                    <h3>Non ci sono fumetti da mostrare</h3>
+                    @endforelse
                 </ul>
                 <div class="load-more">
                     <p>LOAD MORE</p>

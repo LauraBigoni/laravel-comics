@@ -1,7 +1,6 @@
 main {
     color: white;
     background-color: #1c1c1c;
-
     .container {
         position: relative;
         padding: 50px 0;
@@ -9,7 +8,6 @@ main {
         flex-wrap: wrap;
         justify-content: center;
     }
-
     #jumbotron {
         background-image: url('../images/jumbotron.jpg');
         background-repeat: no-repeat;
@@ -17,7 +15,6 @@ main {
         background-size: cover;
         height: 400px;
     }
-
     .currentSeries {
         width: fit-content;
         padding: 10px;
@@ -28,7 +25,6 @@ main {
         left: 0;
         cursor: pointer;
     }
-
     .load-more {
         width: 200px;
         height: fit-content;
@@ -44,23 +40,19 @@ main {
             list-style-type: none;
             display: flex;
             justify-content: space-around;
-
             li {
                 padding: 20px;
                 display: flex;
                 align-items: center;
-
                 img {
                     width: 50px;
                     height: 60px;
                     margin-right: 20px;
                     color: $secondary_color;
                 }
-
                 img.resized {
                     width: 40px;
                 }
-
                 a {
                     color: $secondary_color;
                     font-weight: bolder;
@@ -74,18 +66,18 @@ main {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
-
             li {
                 margin: 20px 5px;
                 width: 200px;
             }
-
+            .cards {
+                cursor: pointer;
+            }
             .card {
                 width: 200px;
                 height: 200px;
                 overflow: hidden;
             }
-
             p {
                 padding: 20px 0;
             }

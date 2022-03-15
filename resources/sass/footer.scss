@@ -5,11 +5,9 @@ footer {
     display: flex;
     flex-direction: column;
     color: $main_color;
-
     .container {
         .content {
             display: flex;
-
             .bigger-logo {
                 background-image: url("../images/dc-logo-bg.png");
                 background-repeat: no-repeat;
@@ -18,15 +16,12 @@ footer {
             }
         }
     }
-
     a {
         color: $secondary_color;
     }
-
     #footer-nav {
         display: flex;
         margin: 40px;
-
         h5 {
             padding: 20px 0;
             font-size: 20px;
@@ -34,41 +29,33 @@ footer {
         ul {
             list-style-type: none;
             padding-right: 30px;
-
             li {
                 line-height: 20px;
                 font-size: 14px;
             }
         }
     }
-
     #footer-social {
         background-color: #303030;
         padding: 40px 0;
-
         .container {
             display: flex;
             align-items: center;
             justify-content: space-between;
-
             a {
                 padding: 10px;
                 border: 2px solid dodgerblue;
             }
-
             img {
                 padding: 0 10px;
                 cursor: pointer;
             }
-
             .sign-up {
                 font-weight: bold;
             }
-
             .socials {
                 display: flex;
                 align-items: center;
-
                 h4 {
                     color: dodgerblue;
                     padding-right: 10px;

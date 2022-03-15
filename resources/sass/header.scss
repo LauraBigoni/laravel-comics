@@ -22,24 +22,24 @@ header {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-
 		.logo img {
 			width: 80px;
 			height: auto;
 		}
 		.nav-menu {
 			display: flex;
+			i {
+				cursor: pointer;
+			}
 		}
 		ul {
 			display: flex;
 			list-style-type: none;
 			align-items: center;
-
 			li {
 				padding: 60px 0;
 				margin-right: 15px;
 				border-bottom: 4px solid transparent;
-
 				a {
 					color: #303030;
 					font-weight: bold;
