@@ -1,5 +1,5 @@
 @extends('layouts.main')
 
 @section('content')
-<h1>HOMEPAGE</h1>
+<h1>PAGINA CHARACTERS</h1>
 @endsection

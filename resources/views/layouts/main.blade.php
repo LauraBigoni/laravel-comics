@@ -9,6 +9,7 @@
         @yield('content')
     </main>
     @include('includes.footer')
+    @yield('scripts')
 </body>
 
 </html>
