@@ -1,5 +1,7 @@
 @extends('layouts.main')
 
+@section('title', 'Comics')
+
 @section('content')
     <section id="jumbotron"></section>
     <section id="comics">
