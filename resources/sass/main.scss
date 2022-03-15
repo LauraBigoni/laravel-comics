@@ -1,0 +1,97 @@
+main {
+    color: white;
+    background-color: #1c1c1c;
+
+    .container {
+        position: relative;
+        padding: 50px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #jumbotron {
+        background-image: url('../images/jumbotron.jpg');
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+        height: 400px;
+    }
+
+    .currentSeries {
+        width: fit-content;
+        padding: 10px;
+        font-weight: bold;
+        background-color: dodgerblue;
+        position: absolute;
+        top: -20px;
+        left: 0;
+        cursor: pointer;
+    }
+
+    .load-more {
+        width: 200px;
+        height: fit-content;
+        text-align: center;
+        padding: 10px;
+        font-weight: bold;
+        background-color: dodgerblue;
+        cursor: pointer;
+    }
+    #secondary-nav {
+        background-color: dodgerblue;
+        ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+
+            li {
+                padding: 20px;
+                display: flex;
+                align-items: center;
+
+                img {
+                    width: 50px;
+                    height: 60px;
+                    margin-right: 20px;
+                    color: $secondary_color;
+                }
+
+                img.resized {
+                    width: 40px;
+                }
+
+                a {
+                    color: $secondary_color;
+                    font-weight: bolder;
+                }
+            }
+        }
+    }
+    #comics {
+        ul {
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+            li {
+                margin: 20px 5px;
+                width: 200px;
+            }
+
+            .card {
+                width: 200px;
+                height: 200px;
+                overflow: hidden;
+            }
+
+            p {
+                padding: 20px 0;
+            }
+            .comic-series {
+                text-transform: uppercase;
+            }
+        }
+    }
+}

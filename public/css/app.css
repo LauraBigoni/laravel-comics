@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Segoe UI", "Open Sans", Helvetica, sans-serif;
+}
+
+#secondary-nav,
+footer li {
+  font-family: "Segoe UI Light", "Open Sans", Helvetica, sans-serif;
+}
+
+header {
+  background-color: white;
+}
+header .additional-dc-sites {
+  background-color: dodgerblue;
+  width: 100%;
+  height: 30px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+header .additional-dc-sites p + p {
+  margin: 0 20px;
+}
+header .additional-dc-sites p + p i {
+  margin-left: 5px;
+  cursor: pointer;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .container .logo img {
+  width: 80px;
+  height: auto;
+}
+header .container .nav-menu {
+  display: flex;
+}
+header .container ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+header .container ul li {
+  padding: 60px 0;
+  margin-right: 15px;
+  border-bottom: 4px solid transparent;
+}
+header .container ul li a {
+  color: #303030;
+  font-weight: bold;
+}
+header .container ul li a i {
+  color: dodgerblue;
+  margin-left: 5px;
+}
+header .container ul li.active {
+  border-bottom: 4px solid dodgerblue;
+}
+header .container .search-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+}
+header .container .search-container input {
+  height: 30px;
+  border: none;
+  padding-left: 5px;
+  padding-bottom: 2px;
+  border-bottom: 2px solid dodgerblue;
+}
+header .container .search-container i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+main {
+  color: white;
+  background-color: #1c1c1c;
+}
+main .container {
+  position: relative;
+  padding: 50px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main #jumbotron {
+  background-image: url("../images/jumbotron.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  height: 400px;
+}
+main .currentSeries {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px;
+  font-weight: bold;
+  background-color: dodgerblue;
+  position: absolute;
+  top: -20px;
+  left: 0;
+  cursor: pointer;
+}
+main .load-more {
+  width: 200px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  background-color: dodgerblue;
+  cursor: pointer;
+}
+main #secondary-nav {
+  background-color: dodgerblue;
+}
+main #secondary-nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+main #secondary-nav ul li {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+main #secondary-nav ul li img {
+  width: 50px;
+  height: 60px;
+  margin-right: 20px;
+  color: lightgrey;
+}
+main #secondary-nav ul li img.resized {
+  width: 40px;
+}
+main #secondary-nav ul li a {
+  color: lightgrey;
+  font-weight: bolder;
+}
+main #comics ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+main #comics ul li {
+  margin: 20px 5px;
+  width: 200px;
+}
+main #comics ul .card {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+main #comics ul p {
+  padding: 20px 0;
+}
+main #comics ul .comic-series {
+  text-transform: uppercase;
+}
+
+footer {
+  background-image: url("../images/footer-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+footer .container .content {
+  display: flex;
+}
+footer .container .content .bigger-logo {
+  background-image: url("../images/dc-logo-bg.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  width: 700px;
+}
+footer a {
+  color: lightgrey;
+}
+footer #footer-nav {
+  display: flex;
+  margin: 40px;
+}
+footer #footer-nav h5 {
+  padding: 20px 0;
+  font-size: 20px;
+}
+footer #footer-nav ul {
+  list-style-type: none;
+  padding-right: 30px;
+}
+footer #footer-nav ul li {
+  line-height: 20px;
+  font-size: 14px;
+}
+footer #footer-social {
+  background-color: #303030;
+  padding: 40px 0;
+}
+footer #footer-social .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer #footer-social .container a {
+  padding: 10px;
+  border: 2px solid dodgerblue;
+}
+footer #footer-social .container img {
+  padding: 0 10px;
+  cursor: pointer;
+}
+footer #footer-social .container .sign-up {
+  font-weight: bold;
+}
+footer #footer-social .container .socials {
+  display: flex;
+  align-items: center;
+}
+footer #footer-social .container .socials h4 {
+  color: dodgerblue;
+  padding-right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
