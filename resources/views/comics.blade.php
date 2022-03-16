@@ -3,7 +3,7 @@
 @section('title', 'Comics')
 
 @section('content')
-    <section id="jumbotron"></section>
+    <section id="jumbotron" class="comics"></section>
     <section id="comics">
         <div class="container">
             <div class="currentSeries">
@@ -12,11 +12,12 @@
             <ul>
                 @forelse ($comics as $comic)
                     <li class="cards">
-                        {{-- qua inserisco la a --}}
-                        <div class="card">
-                            <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}" />
-                        </div>
-                        <p class="comic-series">{{ $comic['title'] }}</p>
+                        <a href="{{ route('comic') }}">
+                            <div class="card">
+                                <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}" />
+                            </div>
+                            <p class="comic-series">{{ $comic['title'] }}</p>
+                        </a>
                     </li>
                 @empty
                     <h3>Non ci sono fumetti da mostrare</h3>

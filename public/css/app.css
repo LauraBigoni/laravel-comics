@@ -64,6 +64,11 @@ header .container .nav-menu {
 header .container .nav-menu i {
   cursor: pointer;
 }
+header .container .nav-menu i.fa-caret-down {
+  color: dodgerblue;
+  margin-right: 20px;
+  margin-left: -10px;
+}
 header .container ul {
   display: flex;
   list-style-type: none;
@@ -77,10 +82,6 @@ header .container ul li {
 header .container ul li a {
   color: #303030;
   font-weight: bold;
-}
-header .container ul li a i {
-  color: dodgerblue;
-  margin-left: 5px;
 }
 header .container ul li.active {
   border-bottom: 4px solid dodgerblue;
@@ -111,7 +112,7 @@ main {
 }
 main h1 {
   text-align: center;
-  padding: 48px 0;
+  padding: 50px 0;
 }
 main .container {
   position: relative;
@@ -121,11 +122,46 @@ main .container {
   justify-content: center;
 }
 main #jumbotron {
-  background-image: url("../images/jumbotron.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
   height: 400px;
+}
+main #jumbotron.home {
+  background-image: url("../images/jumbohome.jpg");
+}
+main #jumbotron.comics {
+  background-image: url("../images/jumbocomics.jpg");
+}
+main #jumbotron.comic {
+  background-image: url("../images/jumbocomic.jpg");
+}
+main #jumbotron.characters {
+  background-image: url("../images/jumbocharacters.png");
+}
+main #jumbotron.collectibles {
+  background-image: url("../images/jumbocollectibles.jpg");
+}
+main #jumbotron.fans {
+  background-image: url("../images/jumbofans.jpg");
+}
+main #jumbotron.games {
+  background-image: url("../images/jumbogames.png");
+}
+main #jumbotron.movies {
+  background-image: url("../images/jumbomovies.jpg");
+}
+main #jumbotron.news {
+  background-image: url("../images/jumbonews.jpg");
+}
+main #jumbotron.tv {
+  background-image: url("../images/jumbotv.jpg");
+}
+main #jumbotron.videos {
+  background-image: url("../images/jumbovideos.jpg");
+}
+main #jumbotron.shop {
+  background-image: url("../images/jumboshop.jpg");
 }
 main .currentSeries {
   width: -webkit-fit-content;
@@ -196,6 +232,7 @@ main #comics ul .card {
 }
 main #comics ul p {
   padding: 20px 0;
+  color: #fff;
 }
 main #comics ul .comic-series {
   text-transform: uppercase;

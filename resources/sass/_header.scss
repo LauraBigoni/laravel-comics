@@ -30,6 +30,12 @@ header {
 			display: flex;
 			i {
 				cursor: pointer;
+
+				&.fa-caret-down {
+					color: dodgerblue;
+					margin-right: 20px;
+					margin-left: -10px;
+				}
 			}
 		}
 		ul {
@@ -43,10 +49,6 @@ header {
 				a {
 					color: #303030;
 					font-weight: bold;
-					i {
-						color: dodgerblue;
-						margin-left: 5px;
-					}
 				}
 			}
 			li.active {

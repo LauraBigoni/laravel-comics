@@ -3,7 +3,7 @@ main {
     background-color: #1c1c1c;
     h1 {
         text-align: center;
-        padding: 48px 0;
+        padding: 50px 0;
     }
     .container {
         position: relative;
@@ -13,11 +13,22 @@ main {
         justify-content: center;
     }
     #jumbotron {
-        background-image: url('../images/jumbotron.jpg');
         background-repeat: no-repeat;
         background-position: top center;
         background-size: cover;
         height: 400px;
+        &.home { background-image: url("../images/jumbohome.jpg");}
+        &.comics { background-image: url("../images/jumbocomics.jpg");}
+        &.comic { background-image: url("../images/jumbocomic.jpg");}
+        &.characters { background-image: url("../images/jumbocharacters.png");}
+        &.collectibles { background-image: url("../images/jumbocollectibles.jpg");}
+        &.fans { background-image: url("../images/jumbofans.jpg");}
+        &.games { background-image: url("../images/jumbogames.png");}
+        &.movies { background-image: url("../images/jumbomovies.jpg");}
+        &.news { background-image: url("../images/jumbonews.jpg");}
+        &.tv { background-image: url("../images/jumbotv.jpg");}
+        &.videos { background-image: url("../images/jumbovideos.jpg");}
+        &.shop { background-image: url("../images/jumboshop.jpg");}
     }
     .currentSeries {
         width: fit-content;
@@ -84,6 +95,7 @@ main {
             }
             p {
                 padding: 20px 0;
+                color: #fff;
             }
             .comic-series {
                 text-transform: uppercase;
