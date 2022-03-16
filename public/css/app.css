@@ -237,6 +237,118 @@ main #comics ul p {
 main #comics ul .comic-series {
   text-transform: uppercase;
 }
+main #comic {
+  background-color: #fff;
+  color: #024165;
+  padding-bottom: 100px;
+  border-bottom: 2px solid #e6e6e6;
+}
+main #comic .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+main #comic .container .details {
+  width: 60%;
+  margin-right: 80px;
+}
+main #comic .container .details .availability {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  margin-bottom: 20px;
+  background-color: #55ba59;
+  color: #fff;
+  border-bottom: 2px solid #3b833f;
+}
+main #comic .container .details .availability > div:nth-child(1) {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  align-items: center;
+  border-right: 2px solid #3b833f;
+}
+main #comic .container .details .availability p {
+  display: inline;
+}
+main #comic .container .details .availability p + p {
+  padding-right: 20px;
+}
+main #comic .container .details .availability .text-op {
+  color: rgba(255, 255, 255, 0.514);
+}
+main #comic .container .details .availability .text-white {
+  color: #fff;
+}
+main #comic .container .details .availability span.text-white {
+  padding: 0 10px 0 15px;
+}
+main #comic .container .details h2 {
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+main #comic .container .details p {
+  padding-right: 20px;
+}
+main #comic .container .details p,
+main #comic .container .details span {
+  font-weight: bold;
+  color: #686b6f;
+  font-size: 16px;
+}
+main #comic .container .adv {
+  text-align: right;
+  font-weight: bold;
+  color: #686b6f;
+  font-size: 14px;
+}
+main #comic-info {
+  background-color: #f6f6f6;
+  height: 400px;
+  color: #003f5e;
+}
+main #comic-info .container {
+  justify-content: space-around;
+}
+main #comic-info .table > *:nth-child(1n+1) {
+  border-bottom: 1px solid #e6e6e6;
+}
+main #comic-info h2 {
+  padding-bottom: 30px;
+}
+main #comic-info .art,
+main #comic-info .written,
+main #comic-info .series,
+main #comic-info .price,
+main #comic-info .sale-date {
+  display: flex;
+  align-items: center;
+  width: 500px;
+}
+main #comic-info .art > *,
+main #comic-info .written > *,
+main #comic-info .series > *,
+main #comic-info .price > *,
+main #comic-info .sale-date > * {
+  padding: 10px 0;
+}
+main #comic-info .art h6,
+main #comic-info .written h6,
+main #comic-info .series h6,
+main #comic-info .price h6,
+main #comic-info .sale-date h6 {
+  width: 100px;
+}
+main #comic-info .art span,
+main #comic-info .written span,
+main #comic-info .series span,
+main #comic-info .price span,
+main #comic-info .sale-date span {
+  padding-left: 20px;
+}
 
 footer {
   background-image: url("../images/footer-bg.jpg");

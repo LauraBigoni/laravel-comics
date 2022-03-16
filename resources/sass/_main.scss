@@ -17,18 +17,42 @@ main {
         background-position: top center;
         background-size: cover;
         height: 400px;
-        &.home { background-image: url("../images/jumbohome.jpg");}
-        &.comics { background-image: url("../images/jumbocomics.jpg");}
-        &.comic { background-image: url("../images/jumbocomic.jpg");}
-        &.characters { background-image: url("../images/jumbocharacters.png");}
-        &.collectibles { background-image: url("../images/jumbocollectibles.jpg");}
-        &.fans { background-image: url("../images/jumbofans.jpg");}
-        &.games { background-image: url("../images/jumbogames.png");}
-        &.movies { background-image: url("../images/jumbomovies.jpg");}
-        &.news { background-image: url("../images/jumbonews.jpg");}
-        &.tv { background-image: url("../images/jumbotv.jpg");}
-        &.videos { background-image: url("../images/jumbovideos.jpg");}
-        &.shop { background-image: url("../images/jumboshop.jpg");}
+        &.home {
+            background-image: url("../images/jumbohome.jpg");
+        }
+        &.comics {
+            background-image: url("../images/jumbocomics.jpg");
+        }
+        &.comic {
+            background-image: url("../images/jumbocomic.jpg");
+        }
+        &.characters {
+            background-image: url("../images/jumbocharacters.png");
+        }
+        &.collectibles {
+            background-image: url("../images/jumbocollectibles.jpg");
+        }
+        &.fans {
+            background-image: url("../images/jumbofans.jpg");
+        }
+        &.games {
+            background-image: url("../images/jumbogames.png");
+        }
+        &.movies {
+            background-image: url("../images/jumbomovies.jpg");
+        }
+        &.news {
+            background-image: url("../images/jumbonews.jpg");
+        }
+        &.tv {
+            background-image: url("../images/jumbotv.jpg");
+        }
+        &.videos {
+            background-image: url("../images/jumbovideos.jpg");
+        }
+        &.shop {
+            background-image: url("../images/jumboshop.jpg");
+        }
     }
     .currentSeries {
         width: fit-content;
@@ -99,6 +123,107 @@ main {
             }
             .comic-series {
                 text-transform: uppercase;
+            }
+        }
+    }
+    #comic {
+        background-color: #fff;
+        color: #024165;
+        padding-bottom: 100px;
+        border-bottom: 2px solid #e6e6e6;
+        .container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            .details {
+                width: 60%;
+                margin-right: 80px;
+                .availability {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0 10px;
+                    margin-bottom: 20px;
+                    background-color: #55ba59;
+                    color: #fff;
+                    border-bottom: 2px solid #3b833f;
+
+                    & > div:nth-child(1) {
+                        flex-grow: 1;
+                        display: flex;
+                        justify-content: space-between;
+                        height: 50px;
+                        align-items: center;
+                        border-right: 2px solid #3b833f;
+                    }
+                    p {
+                        display: inline;
+                    }
+                    p + p {
+                        padding-right: 20px;
+                    }
+                    .text-op {
+                        color: rgba(255, 255, 255, 0.514);
+                    }
+                    .text-white {
+                        color: #fff;
+                    }
+                    span.text-white {
+                        padding: 0 10px 0 15px;
+                    }
+                }
+                h2 {
+                    text-transform: uppercase;
+                    padding-bottom: 20px;
+                }
+                p {
+                    padding-right: 20px;
+                }
+                p,
+                span {
+                    font-weight: bold;
+                    color: #686b6f;
+                    font-size: 16px;
+                }
+            }
+            .adv {
+                text-align: right;
+                font-weight: bold;
+                color: #686b6f;
+                font-size: 14px;
+            }
+        }
+    }
+    #comic-info {
+        background-color: #f6f6f6;
+        height: 400px;
+        color: #003f5e;
+        .container {
+            justify-content: space-around;
+        }
+        .table > *:nth-child(1n + 1) {
+            border-bottom: 1px solid #e6e6e6;
+        }
+        h2 {
+            padding-bottom: 30px;
+        }
+        .art,
+        .written,
+        .series,
+        .price,
+        .sale-date {
+            display: flex;
+            align-items: center;
+            width: 500px;
+            & > * {
+                padding: 10px 0;
+            }
+            h6 {
+                width: 100px;
+            }
+            span {
+                padding-left: 20px;
             }
         }
     }
