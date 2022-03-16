@@ -373,12 +373,60 @@ main .product-nav {
 }
 main .product-nav.prev {
   left: 10px;
+  -webkit-animation: bounce_left 1s linear infinite;
+          animation: bounce_left 1s linear infinite;
 }
 main .product-nav.next {
   right: 10px;
+  -webkit-animation: bounce_right 1s linear infinite;
+          animation: bounce_right 1s linear infinite;
 }
 main .product-nav a {
   color: #686b6f;
+}
+@-webkit-keyframes bounce_right {
+  0% {
+    right: 10px;
+  }
+  50% {
+    right: 30px;
+  }
+  100% {
+    right: 10px;
+  }
+}
+@keyframes bounce_right {
+  0% {
+    right: 10px;
+  }
+  50% {
+    right: 30px;
+  }
+  100% {
+    right: 10px;
+  }
+}
+@-webkit-keyframes bounce_left {
+  0% {
+    left: 10px;
+  }
+  50% {
+    left: 30px;
+  }
+  100% {
+    left: 10px;
+  }
+}
+@keyframes bounce_left {
+  0% {
+    left: 10px;
+  }
+  50% {
+    left: 30px;
+  }
+  100% {
+    left: 10px;
+  }
 }
 
 footer {

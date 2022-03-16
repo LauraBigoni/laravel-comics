@@ -251,12 +251,36 @@ main {
         bottom: 0;
         &.prev {
             left: 10px;
+            animation: bounce_left 1s linear infinite;
         }
         &.next {
             right: 10px;
+            animation: bounce_right 1s linear infinite;
         }
         a {
             color: #686b6f;
+        }
+    }
+    @keyframes bounce_right {
+        0% {
+            right: 10px;
+        }
+        50% {
+            right: 30px;
+        }
+        100% {
+            right: 10px;
+        }
+    }
+    @keyframes bounce_left {
+        0% {
+            left: 10px;
+        }
+        50% {
+            left: 30px;
+        }
+        100% {
+            left: 10px;
         }
     }
 }
