@@ -3,24 +3,27 @@
 @section('title', 'Comic')
 
 @section('content')
-    <section id="jumbotron" class="comic"><div class="img">
-            <img src="{{$comic['thumb']}}" alt="">
-        </div></section>
+    <section id="jumbotron" class="comic">
+        <div class="img">
+            <img src="{{ $comic['thumb'] }}" alt="">
+        </div>
+    </section>
     <section class="comics-info">
         <div id="comic">
             <div class="container">
                 <div class="details">
-                    <h2>{{ $comic['title']}}</h2>
+                    <h2>{{ $comic['title'] }}</h2>
                     <div class="availability">
                         <div>
-                            <p class="text-op">U.S. Price: <span class="text-white">{{ $comic['price'] }}</span></p>
+                            <p class="text-op">U.S. Price: <span class="text-white">{{ $comic['price'] }}</span>
+                            </p>
                             <p class="text-op">AVAILABLE</p>
                         </div>
                         <div>
                             <span class="text-white">Check Availability <i class="fa-solid fa-caret-down"></i></span>
                         </div>
                     </div>
-                    <p>{{ $comic['description']}}</p>
+                    <p>{{ $comic['description'] }}</p>
                 </div>
                 <div class="adv">
                     <p>ADVERTISEMENT</p>
@@ -34,14 +37,24 @@
                     <h2>Talent</h2>
                     <div class="art">
                         <h6>Art by:</h6>
-                        <span>  
-                            
+                        <span>
+                            @foreach ($comic['artists'] as $artist)
+                                {{ $artist }}
+                                @if (!$loop->last)
+                                    ,
+                                @endif
+                            @endforeach
                         </span>
                     </div>
                     <div class="written">
                         <h6>Written by:</h6>
                         <span>
-
+                            @foreach ($comic['writers'] as $writer)
+                                {{ $writer }}
+                                @if (!$loop->last)
+                                    ,
+                                @endif
+                            @endforeach
                         </span>
                     </div>
                 </div>
@@ -49,15 +62,15 @@
                     <h2>Specs</h2>
                     <div class="series">
                         <h6>Series:</h6>
-                        <span>{{ $comic['series']}}</span>
+                        <span>{{ $comic['series'] }}</span>
                     </div>
                     <div class="price">
                         <h6>U.S. Price:</h6>
-                        <span>{{ $comic['price']}}</span>
+                        <span>{{ $comic['price'] }}</span>
                     </div>
                     <div class="sale-date">
                         <h6>On Sale Date:</h6>
-                        <span>{{ $comic['sale_date']}}</span>
+                        <span>{{ $comic['sale_date'] }}</span>
                     </div>
                 </div>
             </div>
