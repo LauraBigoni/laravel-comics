@@ -10,9 +10,9 @@
                 <p>CURRENT SERIES</p>
             </div>
             <ul>
-                @forelse ($comics as $comic)
+                @forelse ($comics as $index => $comic)
                     <li class="cards">
-                        <a href="{{ route('comic') }}">
+                        <a href="{{ url("/comic/$index") }}">
                             <div class="card">
                                 <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}" />
                             </div>
