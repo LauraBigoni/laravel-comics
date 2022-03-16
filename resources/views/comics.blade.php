@@ -28,7 +28,7 @@
             </div>
         </div>
     </section>
-    <section id="secondary-nav">
+    <section class="secondary-nav">
         <div class="container">
             <ul>
                 <li>

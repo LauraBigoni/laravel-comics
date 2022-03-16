@@ -43,11 +43,13 @@
                     <h2>Talent</h2>
                     <div class="art">
                         <h6>Art by:</h6>
-                        <span> persone, persone, persone, persone, persone, persone, persone, persone, persone, persone</span>
+                        <span> persone, persone, persone, persone, persone, persone, persone, persone, persone,
+                            persone</span>
                     </div>
                     <div class="written">
                         <h6>Written by:</h6>
-                        <span> persone, persone, persone, persone, persone, persone, persone, persone, persone, persone</span>
+                        <span> persone, persone, persone, persone, persone, persone, persone, persone, persone,
+                            persone</span>
                     </div>
                 </div>
                 <div class="table">
@@ -65,6 +67,31 @@
                         <span>Oct 02 2018</span>
                     </div>
                 </div>
+            </div>
+            <div class="secondary-nav">
+                <ul>
+                    <li>
+                        <img src="{{ asset('images/buy-comics-digital-comics.png') }}" alt="comics" />
+                        <a href="#">DIGITAL COMICS</a>
+                    </li>
+                    <li>
+                        <img src="{{ asset('images/buy-comics-merchandise.png') }}" alt="merchandise" />
+                        <a href="#">DC MERCHANDISE</a>
+                    </li>
+                    <li>
+                        <img src="{{ asset('images/buy-comics-subscriptions.png') }}" alt="subscription" />
+                        <a href="#">SUBSCRIPTION</a>
+                    </li>
+                    <li>
+                        <img class="resized" src="{{ asset('images/buy-comics-shop-locator.png') }}"
+                            alt="shop locator" />
+                        <a href="#">COMIC SHOP LOCATOR</a>
+                    </li>
+                    <li>
+                        <img src="{{ asset('images/buy-dc-power-visa.svg') }}" alt="visa" />
+                        <a href="#">DC POWER VISA</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>

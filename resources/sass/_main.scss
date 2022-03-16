@@ -73,7 +73,7 @@ main {
         background-color: dodgerblue;
         cursor: pointer;
     }
-    #secondary-nav {
+    .secondary-nav {
         background-color: dodgerblue;
         ul {
             list-style-type: none;
@@ -197,10 +197,13 @@ main {
     }
     #comic-info {
         background-color: #f6f6f6;
-        height: 400px;
+        padding-top: 80px;
         color: #003f5e;
         .container {
             justify-content: space-around;
+        }
+        .table {
+            padding-bottom: 50px;
         }
         .table > *:nth-child(1n + 1) {
             border-bottom: 1px solid #e6e6e6;

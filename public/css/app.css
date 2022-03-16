@@ -186,29 +186,29 @@ main .load-more {
   background-color: dodgerblue;
   cursor: pointer;
 }
-main #secondary-nav {
+main .secondary-nav {
   background-color: dodgerblue;
 }
-main #secondary-nav ul {
+main .secondary-nav ul {
   list-style-type: none;
   display: flex;
   justify-content: space-around;
 }
-main #secondary-nav ul li {
+main .secondary-nav ul li {
   padding: 20px;
   display: flex;
   align-items: center;
 }
-main #secondary-nav ul li img {
+main .secondary-nav ul li img {
   width: 50px;
   height: 60px;
   margin-right: 20px;
   color: lightgrey;
 }
-main #secondary-nav ul li img.resized {
+main .secondary-nav ul li img.resized {
   width: 40px;
 }
-main #secondary-nav ul li a {
+main .secondary-nav ul li a {
   color: lightgrey;
   font-weight: bolder;
 }
@@ -307,11 +307,14 @@ main #comic .container .adv {
 }
 main #comic-info {
   background-color: #f6f6f6;
-  height: 400px;
+  padding-top: 80px;
   color: #003f5e;
 }
 main #comic-info .container {
   justify-content: space-around;
+}
+main #comic-info .table {
+  padding-bottom: 50px;
 }
 main #comic-info .table > *:nth-child(1n+1) {
   border-bottom: 1px solid #e6e6e6;
