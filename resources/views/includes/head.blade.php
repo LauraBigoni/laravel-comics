@@ -7,5 +7,6 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}">
     @yield('styles')
+    @yield('cdns')
     <title>DC | @yield('title')</title>
 </head>

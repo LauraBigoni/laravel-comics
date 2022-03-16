@@ -12,6 +12,7 @@
             <ul>
                 @forelse ($comics as $comic)
                     <li class="cards">
+                        {{-- qua inserisco la a --}}
                         <div class="card">
                             <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}" />
                         </div>

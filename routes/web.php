@@ -23,8 +23,13 @@ Route::get('/characters', function () {
 
 Route::get('/comics', function () {
     $comics = config('comics');
+    // dump($comics);
     return view('comics', ['comics' => $comics]);
 })->name('comics');
+
+Route::get('/comic', function () {
+    return view('comic');
+})->name('comic');
 
 Route::get('/movies', function () {
     return view('movies');
