@@ -373,13 +373,13 @@ main .product-nav {
 }
 main .product-nav.prev {
   left: 10px;
-  -webkit-animation: bounce_left 1s linear infinite;
-          animation: bounce_left 1s linear infinite;
+  -webkit-animation: bounce_left 1s ease-in-out infinite;
+          animation: bounce_left 1s ease-in-out infinite;
 }
 main .product-nav.next {
   right: 10px;
-  -webkit-animation: bounce_right 1s linear infinite;
-          animation: bounce_right 1s linear infinite;
+  -webkit-animation: bounce_right 1s ease-in-out infinite;
+          animation: bounce_right 1s ease-in-out infinite;
 }
 main .product-nav a {
   color: #686b6f;
