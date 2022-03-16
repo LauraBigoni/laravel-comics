@@ -28,11 +28,13 @@ Route::get('/comics', function () {
 })->name('comics');
 
 Route::get('/comics/{id}', function ($id) {
-
     $comics = config('comics');
-    $comic = $comics[$id];
 
-    return view('comic', compact('comic'));
+    $comic = $comics[$id];
+    $prev = $id > 0 ? $id - 1 : count($comics) - 1;
+    $next = $id == count($comics) - 1 ? 0 : $id + 1;
+
+    return view('comic', compact('comic', 'prev', 'next'));
 })->name('comic');
 
 Route::get('/movies', function () {

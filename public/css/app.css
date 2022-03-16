@@ -367,6 +367,19 @@ main #comic-info .price span,
 main #comic-info .sale-date span {
   padding-left: 20px;
 }
+main .product-nav {
+  position: absolute;
+  bottom: 0;
+}
+main .product-nav.prev {
+  left: 10px;
+}
+main .product-nav.next {
+  right: 10px;
+}
+main .product-nav a {
+  color: #686b6f;
+}
 
 footer {
   background-image: url("../images/footer-bg.jpg");

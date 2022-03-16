@@ -246,4 +246,17 @@ main {
             }
         }
     }
+    .product-nav {
+        position: absolute;
+        bottom: 0;
+        &.prev {
+            left: 10px;
+        }
+        &.next {
+            right: 10px;
+        }
+        a {
+            color: #686b6f;
+        }
+    }
 }
