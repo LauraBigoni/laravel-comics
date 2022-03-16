@@ -125,7 +125,16 @@ main #jumbotron {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
-  height: 400px;
+  height: 500px;
+  position: relative;
+}
+main #jumbotron .img {
+  position: absolute;
+  bottom: -70px;
+  left: 240px;
+}
+main #jumbotron .img img {
+  border: 2px solid white;
 }
 main #jumbotron.home {
   background-image: url("../images/jumbohome.jpg");
@@ -135,6 +144,7 @@ main #jumbotron.comics {
 }
 main #jumbotron.comic {
   background-image: url("../images/jumbocomic.jpg");
+  border-bottom: 80px solid dodgerblue;
 }
 main #jumbotron.characters {
   background-image: url("../images/jumbocharacters.png");
@@ -240,7 +250,7 @@ main #comics ul .comic-series {
 main #comic {
   background-color: #fff;
   color: #024165;
-  padding-bottom: 100px;
+  padding: 100px 0;
   border-bottom: 2px solid #e6e6e6;
 }
 main #comic .container {
@@ -279,12 +289,14 @@ main #comic .container .details .availability p + p {
 }
 main #comic .container .details .availability .text-op {
   color: rgba(255, 255, 255, 0.514);
+  cursor: pointer;
 }
 main #comic .container .details .availability .text-white {
   color: #fff;
 }
 main #comic .container .details .availability span.text-white {
   padding: 0 10px 0 15px;
+  cursor: pointer;
 }
 main #comic .container .details h2 {
   text-transform: uppercase;
@@ -305,9 +317,12 @@ main #comic .container .adv {
   color: #686b6f;
   font-size: 14px;
 }
+main #comic .container .adv img {
+  cursor: pointer;
+}
 main #comic-info {
   background-color: #f6f6f6;
-  padding-top: 80px;
+  padding-top: 20px;
   color: #003f5e;
 }
 main #comic-info .container {
