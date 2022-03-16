@@ -21,6 +21,7 @@ a {
 body {
   font-family: "Segoe UI", "Open Sans", Helvetica, sans-serif;
   background-color: #1c1c1c;
+  overflow-x: hidden;
 }
 
 #secondary-nav,
@@ -366,6 +367,14 @@ main #comic-info .series span,
 main #comic-info .price span,
 main #comic-info .sale-date span {
   padding-left: 20px;
+}
+main #comic-info .art span,
+main #comic-info .written span,
+main #comic-info .series span {
+  color: #2eb9e5;
+}
+main #comic-info .series span {
+  text-transform: uppercase;
 }
 main .product-nav {
   position: absolute;

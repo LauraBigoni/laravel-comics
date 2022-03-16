@@ -245,6 +245,14 @@ main {
                 padding-left: 20px;
             }
         }
+        .art span,
+        .written span,
+        .series span {
+            color: #2eb9e5;
+        }
+        .series span {
+            text-transform: uppercase;
+        }
     }
     .product-nav {
         position: absolute;
