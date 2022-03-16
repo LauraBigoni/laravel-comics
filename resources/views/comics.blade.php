@@ -12,7 +12,7 @@
             <ul>
                 @forelse ($comics as $index => $comic)
                     <li class="cards">
-                        <a href="{{ url("/comic/$index") }}">
+                        <a href="{{ url("/comics/$index") }}">
                             <div class="card">
                                 <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}" />
                             </div>
